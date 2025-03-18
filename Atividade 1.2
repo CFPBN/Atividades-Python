@@ -1,0 +1,74 @@
+s=int(input("Digite a quantidade de segundos: "))
+m=s//60
+h=m//60
+d=h//24
+s-=m*60
+m-=h*60
+h-=d*24
+if d>1:
+    if h>1:
+        if m>1:
+            print(f"{d} dias, {h} horas, {m} minutos e {s} segundos")
+        elif m==1:
+            print(f"{d} dias, {h} horas, {m} minuto e {s} segundos")
+        else:
+            print(f"{d} dias, {h} horas e {s} segundos")
+    elif h==1:
+        if m>1:
+            print(f"{d} dias, {h} hora, {m} minutos e {s} segundos")
+        elif m==1:
+            print(f"{d} dias, {h} hora, {m} minuto e {s} segundos")
+        else:
+            print(f"{d} dias, {h} hora e {s} segundos")
+    else:
+        if m>1:
+            print(f"{d} dias, {m} minutos e {s} segundos")
+        elif m==1:
+            print(f"{d} dias, {m} minuto e {s} segundos")
+        else:
+            print(f"{d} dias e {s} segundos")
+elif d==1:
+    if h>1:
+        if m>1:
+            print(f"{d} dia, {h} horas, {m} minutos e {s} segundos")
+        elif m==1:
+            print(f"{d} dia, {h} horas, {m} minuto e {s} segundos")
+        else:
+            print(f"{d} dia, {h} horas e {s} segundos")
+    elif h==1:
+        if m>1:
+            print(f"{d} dia, {h} hora, {m} minutos e {s} segundos")
+        elif m==1:
+            print(f"{d} dia, {h} hora, {m} minuto e {s} segundos")
+        else:
+            print(f"{d} dia, {h} hora e {s} segundos")
+    else:
+        if m>1:
+            print(f"{d} dia, {m} minutos e {s} segundos")
+        elif m==1:
+            print(f"{d} dia, {m} minuto e {s} segundos")
+        else:
+            print(f"{d} dia e {s} segundos")
+else:
+    if h>1:
+        if m>1:
+            print(f"{h} horas, {m} minutos e {s} segundos")
+        elif m==1:
+            print(f"{h} horas, {m} minuto e {s} segundos")
+        else:
+            print(f"{h} horas e {s} segundos")
+    elif h==1:
+        if m>1:
+            print(f"{h} hora, {m} minutos e {s} segundos")
+        elif m==1:
+            print(f"{h} hora, {m} minuto e {s} segundos")
+        else:
+            print(f"{h} hora e {s} segundos")
+    else:
+        if m>1:
+            print(f"{m} minutos e {s} segundos")
+        elif m==1:
+            print(f"{m} minuto e {s} segundos")
+        else:
+            print(f"{s} segundos")
+#def resolvia em metade das linhas mas foi pela brincadeira mesmo
