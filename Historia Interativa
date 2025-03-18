@@ -1,0 +1,7 @@
+mc=input('Qual o nome do personagem principal? ')
+comida=input('O que ele estava comendo? ')
+companheiro=input('Com quem ele estava comendo? ')
+if companheiro.lower()=='ninguém' or companheiro.lower()=='sozinho':
+  print(f'{mc} estava comendo {comida} sozinho')
+else:
+  print(f'{mc} estava comendo {comida} com {companheiro}')
